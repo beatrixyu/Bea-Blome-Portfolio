@@ -109,6 +109,10 @@ nav {
   color: rgb(92, 91, 91);
 }
 
+#headerSmallSize {
+  display: none;
+}
+
 /* body */
 body {
   width: 100%;
@@ -124,52 +128,86 @@ section {
   body {
     width: 100%;
   }
-  header {
-    height: 100px;
-    width: 100%;
+
+  /* to hide the original header */
+  #headerBigSize {
+    display: none;
   }
 
-  .logo {
-    width: 30%;
-    justify-content: flex-start;
-    margin: 0%;
-  }
-  #logo-img {
-    width: 50px;
-    margin-right: 10px;
-    margin-top: 5%;
-  }
-  .logo-text {
-    font-size: 10px;
-    width: 15%;
-  }
-  .logo a {
+  /* small size for the header */
+
+  #headerSmallSize {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    text-decoration: none;
+    z-index: 999;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 100px;
-    margin: 0%;
-    width: 40%;
   }
-  /* header nav part */
-  #backlink {
-    width: 45%;
-    margin: 0%;
-  }
-  nav ul {
-    font-size: 10px;
+  .logo {
     display: none;
   }
-  nav ul:hover {
-    font-size: 12px;
+  #backlink {
+    display: none;
   }
 
-  nav ul li {
-    margin-left: 10px;
+  .logoSmallSize {
+    width: 40%;
+    justify-content: flex-start;
+    margin: 0%;
+    display: flex;
+  }
+  #logo-img-small {
+    width: 40%;
+    height: 40%;
+    margin-right: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
   }
 
-  .backlink ul li {
-    font-size: 10px;
+  .logo-text-small {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 15%;
+  }
+
+  .logo-text-small,
+  #backlinkSmall,
+  nav {
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(196, 192, 192);
+    list-style: none;
+  }
+
+  /* Samll header nav part */
+  #backlinkSmall {
+    display: inline;
+    margin-left: 30%;
+    padding: 0%;
+    list-style: none;
+  }
+  #backlinkUlSmall {
+    list-style: none;
+    font-size: 15px;
+    padding: 0px;
+    color: rgb(99, 96, 96);
+  }
+
+  #backlinkUlSmall li {
+    margin-left: 5px;
+    margin-bottom: 8px;
+  }
+  #backlinkUlSmall li a {
+    text-decoration: none;
+    color: rgb(99, 96, 96);
   }
 }
 
@@ -319,7 +357,7 @@ section {
   }
 
   .profile1 {
-    margin-top: 50%;
+    margin-top: 100px;
   }
 
   .workhard {
@@ -1415,13 +1453,13 @@ img {
 .DCI {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 120vh;
 }
 #dcileft {
   justify-content: center;
   align-self: center;
   width: 50%;
-  height: 80vh;
+  height: 100vh;
   margin-left: 5%;
 }
 
@@ -1429,7 +1467,7 @@ img {
   justify-content: center;
   align-self: center;
   width: 50%;
-  height: 80vh;
+  height: 100vh;
   margin-left: 10%;
 }
 
@@ -1461,7 +1499,6 @@ img {
   }
   .DCI {
     flex-direction: column;
-    height: 80vh;
   }
   #dcileft h1 {
     font-size: 25px;
@@ -1603,6 +1640,10 @@ img {
 @media screen and (max-width: 768px) {
   .dcipic img {
     width: 100%;
+  }
+
+  #captiondci {
+    font-size: 20px;
   }
 }
 
