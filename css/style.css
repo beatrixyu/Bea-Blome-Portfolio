@@ -3,13 +3,11 @@
   font-family: "Hammersmith One", sans-serif;
 }
 
-
 body {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-/* header */
 header {
   display: flex;
   align-items: center;
@@ -24,7 +22,6 @@ header {
   text-decoration: none;
   z-index: 999;
 }
-
 
 #backlinkUl {
   list-style: none;
@@ -121,6 +118,59 @@ section {
   flex-direction: column;
   width: 100%;
   font-family: "Unlock", cursive;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  header {
+    height: 100px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 30%;
+    justify-content: flex-start;
+    margin: 0%;
+  }
+  #logo-img {
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 5%;
+  }
+  .logo-text {
+    font-size: 10px;
+    width: 15%;
+  }
+  .logo a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100px;
+    margin: 0%;
+    width: 40%;
+  }
+  /* header nav part */
+  #backlink {
+    width: 45%;
+    margin: 0%;
+  }
+  nav ul {
+    font-size: 10px;
+    display: none;
+  }
+  nav ul:hover {
+    font-size: 12px;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  .backlink ul li {
+    font-size: 10px;
+  }
 }
 
 /* workhard part */
@@ -259,6 +309,100 @@ section {
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  /* workhard and playharder part */
+  .profile1,
+  .profile2 {
+    height: auto;
+    letter-spacing: 2px;
+    background: rgb(255, 255, 255, 0);
+  }
+
+  .profile1 {
+    margin-top: 50%;
+  }
+
+  .workhard {
+    width: 60%;
+    position: absolute;
+    margin-left: 40%;
+  }
+
+  .workhardImg,
+  .playhardImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .workhard h2 {
+    font-size: 25px;
+    margin: 5px;
+  }
+  .workhard h2:hover {
+    font-size: 35px;
+  }
+
+  .workhard h5 {
+    font-size: 15px;
+    text-align: right;
+    margin: 5px;
+    line-height: 40px;
+  }
+
+  .workhard h5:hover {
+    font-size: 20px;
+  }
+
+  .playhard {
+    width: 45%;
+    position: absolute;
+    margin-left: 0px;
+  }
+
+  .playhardImg {
+    z-index: -1;
+  }
+
+  .playhard h2 {
+    font-size: 25px;
+    z-index: 9;
+  }
+  .playhard h2:hover {
+    font-size: 35px;
+  }
+
+  .playhard h5 {
+    font-size: 15px;
+    text-align: left;
+    margin: 5px;
+    line-height: 40px;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .playhard h5:hover {
+    font-size: 20px;
+  }
+
+  .gliderpic {
+    width: 90%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  .overlay {
+    width: 90%;
+    height: auto;
+  }
+
+  .playhard:hover .gliderpic {
+    opacity: 0.8;
+    margin-left: 20%;
+  }
+}
+
 /* profile picture part */
 .profilecartoon {
   display: flex;
@@ -319,6 +463,34 @@ section {
   text-shadow: 5px 1px white;
 }
 
+@media screen and (max-width: 768px) {
+  /* introduction part */
+  .profilecartoonimg {
+    width: 40px;
+    top: 50%;
+  }
+  .profilecartoon {
+    height: 100vh;
+    margin-top: 20%;
+  }
+
+  .profilepic {
+    width: 120px;
+  }
+
+  #personalstatement {
+    height: 100vh;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-shadow: 3px 1px white;
+  }
+
+  #introLine {
+    width: 8px;
+  }
+}
+
 /* skill part */
 #skill {
   text-transform: uppercase;
@@ -337,9 +509,8 @@ section {
   justify-content: center;
   align-items: center;
   width: 50%;
-  float: left;
   margin: 2%;
-  padding-left: 8%;
+  padding-right: 8%;
 }
 .skillBar meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
@@ -364,6 +535,28 @@ section {
   margin: 10% auto;
 }
 
+@media screen and (max-width: 768px) {
+  #skill {
+    flex-direction: column;
+    font-size: 10px;
+    letter-spacing: 4px;
+    height: 80vh;
+  }
+
+  #skill img {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 5% auto;
+  }
+
+  .skillBar {
+    width: 90%;
+    padding-left: 8%;
+  }
+}
+
 /* work .experience */
 
 /* the whole work experience block */
@@ -383,7 +576,6 @@ section {
   margin: 0% auto;
   font-size: 70px;
   letter-spacing: 2px;
-  font-family: "Unlock", cursive;
   color: rgb(80, 78, 78);
   text-shadow: white;
   height: 20vh;
@@ -419,27 +611,27 @@ section {
   top: 30%;
   z-index: 3;
 }
-#unicornExp{
+#unicornExp {
   margin-top: 5%;
   border-radius: 50%;
   position: absolute;
   z-index: -1;
 }
 
-#starExp{
+#starExp {
   margin-top: 13%;
   position: absolute;
   z-index: -2;
 }
 
-#mushroomExp{
+#mushroomExp {
   margin-top: 13%;
   border-radius: 50%;
   position: absolute;
   z-index: -2;
 }
 
-#dinasoExp{
+#dinasoExp {
   height: auto;
   margin-top: 20%;
   position: absolute;
@@ -468,7 +660,7 @@ section {
   background-color: rgb(255, 190, 184, 0.8);
   box-shadow: 5px 5px grey;
   margin-left: 2%;
-  font-size: 20px
+  font-size: 20px;
 }
 
 .ex2017,
@@ -486,7 +678,6 @@ section {
   margin-right: 2%;
 }
 
-
 /* words in the experience part */
 #experience h3 {
   text-shadow: 1px 1px white;
@@ -500,7 +691,62 @@ section {
   color: rgb(40, 80, 83);
 }
 
-/* example part */
+/* experience small block*/
+@media screen and (max-width: 768px) {
+  #experienceTitle {
+    font-size: 40px;
+    align-items: flex-end;
+    height: 15vh;
+  }
+
+  #experience h3 {
+    text-shadow: 1px 1px white;
+    margin: auto 5%;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  #lineExpDiv1 {
+    height: 150vh;
+  }
+  .ex2018,
+  .ex2016,
+  .ex2013 {
+    width: 80%;
+    height: 150px;
+    margin: 5% 0;
+  }
+  .ex2017,
+  .ex2015,
+  .ex2019 {
+    margin-left: 20px;
+    width: 80%;
+    height: 150px;
+    text-align: right;
+  }
+  .profilecartoonimgExp {
+    height: auto;
+    width: 60px;
+    margin-left: -35px;
+  }
+  #unicornExp {
+    display: none;
+  }
+
+  #starExp {
+    display: none;
+  }
+
+  #mushroomExp {
+    display: none;
+  }
+
+  #dinasoExp {
+    display: none;
+  }
+}
+
+/* projects part */
 .middlepic {
   display: flex;
   justify-content: center;
@@ -515,9 +761,7 @@ section {
   font-size: 70px;
   margin: 0;
   letter-spacing: 3px;
-  font-family: "Unlock", cursive;
   color: rgb(80, 78, 78);
-  text-shadow: white;
 }
 
 /* the whole block for examples */
@@ -544,6 +788,16 @@ section {
 
 .example h3 {
   font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .middlepic {
+    height: 20vh;
+    background: white;
+    margin: 0% auto;
+  }
+  .middlepic p {
+    font-size: 50px;
+  }
 }
 
 /* the block for one example including words and pic */
@@ -572,16 +826,13 @@ section {
   letter-spacing: 5px;
   color: white;
   z-index: 10;
-  /* transform: rotateZ(90deg); 
-  transform-origin: 0% 100%;
-  opacity: 0; */
 }
 
 .wasateapic img {
   border-radius: 5%;
 }
 
-.wasatea h3{
+.wasatea h3 {
   font-size: 20px;
 }
 /* .wasatea nav{
@@ -605,7 +856,6 @@ section {
   line-height: 130%;
   letter-spacing: 2px;
   text-align: right;
-
 }
 .wasaintro2 {
   width: 40%;
@@ -659,6 +909,32 @@ section {
   z-index: 3;
 }
 
+/* wasatea introduction part */
+@media screen and (max-width: 768px) {
+  #lineWasaDiv {
+    height: 250vh;
+  }
+  #bigWasaLogoDiv {
+    height: 60vh;
+    align-items: center;
+    text-shadow: 2px 2px #5d5b5b;
+    letter-spacing: 3px;
+  }
+  .wasatea h3 {
+    width: 80%;
+    font-size: 15px;
+    margin: 10% auto;
+    line-height: 180%;
+    text-align: center;
+    font-size: 15px;
+  }
+  .wasaintro2 {
+    margin-left: 32%;
+  }
+  .cartoonimgWasa {
+    opacity: 0.4;
+  }
+}
 /* wasa image gallery */
 .teaimgDiv {
   display: flex;
@@ -676,6 +952,16 @@ section {
 .teaimg {
   width: 250px;
   height: 240px;
+}
+
+@media screen and (max-width: 768px) {
+  .teaimgDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
 }
 
 .mySlideswasa {
@@ -757,7 +1043,7 @@ img {
   }
 }
 
-/* media icon */
+/* media icon in wasatea*/
 #mediaIcon {
   list-style: none;
   display: flex;
@@ -785,6 +1071,14 @@ img {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  #mediaIcon h3 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* bd div */
 #blomedesign {
   width: 100%;
@@ -804,7 +1098,7 @@ img {
   z-index: 10;
   flex-direction: column;
 }
-#bigBdLogDiv h1{
+#bigBdLogDiv h1 {
   font-size: 0px;
   opacity: 0;
 }
@@ -818,9 +1112,9 @@ img {
 }
 
 #lineBdDiv {
-  margin-top: -10%;
+  margin-top: -25%;
   width: 100%;
-  height: 400vh;
+  height: 450vh;
   display: flex;
   position: absolute;
   z-index: -5;
@@ -929,7 +1223,7 @@ img {
   background-size: 27%;
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
   background-attachment: fixed;
-  margin: 0 12%;
+  margin: 0 10%;
 }
 #amazonDiv {
   width: 100%;
@@ -953,6 +1247,93 @@ img {
   justify-content: center;
 }
 
+/* blomedesign part */
+@media screen and (max-width: 768px) {
+  /* blome logo */
+  #blomedesign {
+    height: 120vh;
+  }
+  #bigBdLogDiv {
+    height: 60vh;
+  }
+
+  .blomepic {
+    height: 80vh;
+  }
+  .cartoonimgBD {
+    opacity: 0.5;
+  }
+
+  #lineBdDiv {
+    height: 180vh;
+  }
+  .triangle-up-wallet {
+    width: 150px;
+    height: 150px;
+    background: url("/img/walletsmall.jpg");
+    background-size: 40%;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-attachment: fixed;
+    margin: 0 5%;
+  }
+
+  .triangle-up-bag {
+    width: 160px;
+    height: 160px;
+    background: url("/img/washbagsmall.jpg");
+    background-size: 35%;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-attachment: fixed;
+    margin: 0 10%;
+  }
+
+  .triangle-up {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ffbdb7;
+    margin: 0 5%;
+  }
+
+  .triangle-up1 {
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 140px solid #ffbdb7;
+    margin-left: 15%;
+  }
+
+  .triangle-up2 {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid #ffbdb7;
+    bottom: 0;
+    margin: 0 35%;
+  }
+  .triangle-up-bottle {
+    width: 180px;
+    height: 180px;
+    background-size: 30%;
+    margin: 0 1%;
+  }
+  .triangle-up3 {
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 140px solid #ffbdb7;
+    margin: 0 5%;
+  }
+  #amazonDiv {
+    height: 40vh;
+  }
+  #amazonDiv h1 {
+    height: 10vh;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    text-align: center;
+  }
+}
+
 /* DCI bubble */
 
 #bigDciLogDiv {
@@ -969,7 +1350,7 @@ img {
   color: white;
 }
 
-#bigDciLogDiv h1{
+#bigDciLogDiv h1 {
   font-size: 0px;
   opacity: 0;
 }
@@ -1052,7 +1433,7 @@ img {
 
 #dciright {
   justify-content: center;
-  align-self:center;
+  align-self: center;
   width: 50%;
   height: 80vh;
   margin-left: 10%;
@@ -1068,19 +1449,51 @@ img {
 #dcileft img {
   width: 80%;
 }
-#itSkill:hover{
+#itSkill:hover {
   width: 90%;
 }
 
-#computerSkill:hover{
+#computerSkill:hover {
   width: 90%;
 }
-
 
 #dciright img {
   width: 80%;
 }
 
+@media screen and (max-width: 768px) {
+  #bigDciLogDiv {
+    height: 60vh;
+  }
+  .DCI {
+    flex-direction: column;
+    height: 120vh;
+  }
+  #dcileft h1 {
+    font-size: 25px;
+    background: white;
+  }
+
+  #dciright h1 {
+    font-size: 25px;
+    background: white;
+  }
+
+  .cartoonimgDci {
+    opacity: 0.5;
+    width: 100px;
+  }
+  #dcileft {
+    width: 90%;
+  }
+  #dciright {
+    width: 90%;
+  }
+
+  .dcipic {
+    height: 50vh;
+  }
+}
 
 /* dci slideshow */
 
@@ -1095,7 +1508,7 @@ img {
 .containerdci {
   box-sizing: border-box;
   position: relative;
-  width: 80%;
+  width: 100%;
 }
 
 /* Hide the images by default */
@@ -1158,7 +1571,7 @@ img {
   font-size: 30px;
 }
 
-.caption-containerdci p{
+.caption-containerdci p {
   margin: 1% auto;
 }
 
@@ -1178,9 +1591,9 @@ img {
   width: 10%;
   margin: 0 1%;
 }
-.columndci img{
-height: auto;
-align-self: center;
+.columndci img {
+  height: auto;
+  align-self: center;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -1192,6 +1605,12 @@ align-self: center;
   opacity: 1;
 }
 
+/* dci slideshow */
+@media screen and (max-width: 768px) {
+  .dcipic img {
+    width: 100%;
+  }
+}
 
 /* contact part */
 #contact {
@@ -1206,11 +1625,11 @@ align-self: center;
   justify-content: center;
   line-height: 60px;
 }
-#contact ul{
-  padding: 0%
+#contact ul {
+  padding: 0%;
 }
-#contact li{
-  margin: 2%
+#contact li {
+  margin: 2%;
 }
 
 .contactdetail {
@@ -1253,122 +1672,28 @@ align-self: center;
   font-size: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    margin: 0%;
+  }
+  .contactdetail {
+    width: 80%;
+  }
+  .contactpic {
+    width: 100%;
+  }
+  .contactdetail p {
+    font-size: 20px;
+  }
+  .contactdetail h3 {
+    line-height: 40px;
+  }
+}
+
 footer h3 {
   width: 100%;
   text-align: center;
   color: #293d3d;
   font-size: 20px;
-  font-family: "Unlock", cursive;
-}
-
-@media screen and (max-width: 768px) {
-  /* header */
-  header {
-    height: 50px;
-    width: 100%;
-  }
-  #logo-img {
-    width: 40px;
-  }
-
-  .logo-text {
-    font-size: 20px;
-  }
-  nav ul {
-    font-size: 15px;
-    display: none;
-  }
-  nav ul:hover {
-    font-size: 20px;
-  }
-
-  nav ul li {
-    margin-left: 10px;
-  }
-
-  /* workhard and playharder part */
-  .profile1,
-  .profile2 {
-    height: 300px;
-  }
-
-  /* the part of work and contact */
-  .backlink ul li {
-    font-size: 20px;
-  }
-
-  .workhard {
-    width: 50%;
-    position: absolute;
-    margin-left: 300px;
-  }
-
-  .workhardImg,
-  .playhardImg {
-    width: 75%;
-    height: 300px;
-  }
-
-  .workhard h2 {
-    font-size: 30px;
-    margin: 5px;
-  }
-  .workhard h2:hover {
-    font-size: 35px;
-  }
-
-  .workhard h5 {
-    font-size: 20px;
-    text-align: right;
-    margin: 5px;
-  }
-
-  .workhard h5:hover {
-    font-size: 25px;
-  }
-
-  .playhard {
-    width: 40%;
-    position: absolute;
-    margin-left: 0px;
-  }
-
-  .playhardImg {
-    width: 75%;
-    height: 300px;
-    margin-left: 170px;
-  }
-
-  .playhard h2 {
-    font-size: 30px;
-  }
-  .playhard h2:hover {
-    font-size: 35px;
-  }
-
-  .playhard h5 {
-    font-size: 20px;
-    text-align: left;
-    margin: 5px;
-  }
-
-  .playhard h5:hover {
-    font-size: 25px;
-  }
-
-  .gliderpic {
-    width: 90%;
-    height: auto;
-    margin-left: 20%;
-  }
-
-  .overlay {
-    width: 90%;
-    height: auto;
-  }
-
-  .playhard:hover .gliderpic {
-    opacity: 0.8;
-    margin-left: 20%;
-  }
 }
