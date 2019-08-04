@@ -764,12 +764,12 @@ section {
   color: rgb(80, 78, 78);
 }
 
-/* the whole block for examples */
+/* the whole block for job examples */
 .example {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
+  height: 100%;
   color: rgb(61, 60, 60);
 }
 
@@ -791,12 +791,12 @@ section {
 }
 @media screen and (max-width: 768px) {
   .middlepic {
-    height: 20vh;
+    height: 10vh;
     background: white;
     margin: 0% auto;
   }
   .middlepic p {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -941,7 +941,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 140vh;
+  height: 180vh;
 }
 
 .teaimgDiv video {
@@ -1199,7 +1199,7 @@ img {
 .triangle-up-wallet {
   width: 460px;
   height: 460px;
-  background: url("/img/walletsmall.jpg");
+  background: url("../img/walletsmall.jpg");
   background-size: 42%;
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
   background-attachment: fixed;
@@ -1209,7 +1209,7 @@ img {
 .triangle-up-bag {
   width: 500px;
   height: 500px;
-  background: url("/img/washbagsmall.jpg");
+  background: url("../img/washbagsmall.jpg");
   background-size: 35%;
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
   background-attachment: fixed;
@@ -1219,7 +1219,7 @@ img {
 .triangle-up-bottle {
   width: 450px;
   height: 450px;
-  background: url("/img/bottle2.jpeg");
+  background: url("../img/bottle2.jpeg");
   background-size: 27%;
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
   background-attachment: fixed;
@@ -1270,20 +1270,14 @@ img {
   .triangle-up-wallet {
     width: 150px;
     height: 150px;
-    background: url("/img/walletsmall.jpg");
     background-size: 40%;
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-    background-attachment: fixed;
     margin: 0 5%;
   }
 
   .triangle-up-bag {
     width: 160px;
     height: 160px;
-    background: url("/img/washbagsmall.jpg");
     background-size: 35%;
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-    background-attachment: fixed;
     margin: 0 10%;
   }
 
@@ -1467,7 +1461,7 @@ img {
   }
   .DCI {
     flex-direction: column;
-    height: 120vh;
+    height: 80vh;
   }
   #dcileft h1 {
     font-size: 25px;
@@ -1617,11 +1611,10 @@ img {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: #00c6ab;
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  margin: 100px auto;
   justify-content: center;
   line-height: 60px;
 }
@@ -1638,12 +1631,13 @@ img {
   justify-content: flex-start;
   align-items: top;
   margin-left: 20px;
+  margin-top: 10%;
   width: 50%;
 }
 
 .contactdetail p {
   margin: 10px 10px;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 2px;
   text-shadow: 1px 1px white;
 }
@@ -1696,4 +1690,5 @@ footer h3 {
   text-align: center;
   color: #293d3d;
   font-size: 20px;
+  height: 10vh;
 }

@@ -1,15 +1,14 @@
 let personal = true;
 let experience = true;
 let arrPersonal = document.getElementById("personalstatement").children;
-let skillDiv = document.getElementById('skill');
-let arrSkill = document.getElementById('skill').children;
+let skillDiv = document.getElementById("skill");
+let arrSkill = document.getElementById("skill").children;
 let arrExperience = document.querySelector("#experience").children;
-let arrWasatea = document.getElementById('wasaIntro').children;
-let arrWasateaHead = document.getElementById('project').children;
-let arrWasaLogo = document.getElementById('bigWasaLogoDiv').children;
-let arrBlomeLogo = document.getElementById('bigBdLogDiv').children;
-let arrDciLogo = document.getElementById('bigDciLogDiv').children;
-
+let arrWasatea = document.getElementById("wasaIntro").children;
+let arrWasateaHead = document.getElementById("project").children;
+let arrWasaLogo = document.getElementById("bigWasaLogoDiv").children;
+let arrBlomeLogo = document.getElementById("bigBdLogDiv").children;
+let arrDciLogo = document.getElementById("bigDciLogDiv").children;
 
 arrWasatea[0].style.opacity = "0";
 arrWasatea[0].style.transform = "rotateZ(45deg)";
@@ -26,11 +25,9 @@ arrWasatea[5].style.transform = "rotateZ(45deg)";
 arrWasatea[6].style.opacity = "0";
 arrWasatea[6].style.transform = "rotateZ(45deg)";
 
-
 // arrWasateaHead[0].style.opacity = "0";
 // arrWasateaHead[0].style.transform = "rotateZ(45deg)";
 // arrWasateaHead[0].style.left = "100%";
-
 
 function headerMove() {
   let scrollPosition = window.pageYOffset;
@@ -124,7 +121,8 @@ function personalFunc() {
     setTimeout(() => {
       arrPersonal[1].style.opacity = "1";
       arrPersonal[1].style.transition = "all 1.2s ease-in-out";
-    }, 1000); bigWasaLogoDiv
+    }, 1000);
+    bigWasaLogoDiv;
     setTimeout(() => {
       arrPersonal[2].style.opacity = "1";
       arrPersonal[2].style.transition = "all 1.2s ease-in-out";
@@ -142,7 +140,6 @@ function personalFunc() {
   }
 }
 window.addEventListener("scroll", personalFunc);
-
 
 //logo image pipe
 // $(function () {
@@ -175,7 +172,6 @@ function skillFunc() {
 }
 window.addEventListener("scroll", skillFunc);
 
-
 //experience part function
 
 arrExperience[0].style.left = "-500px";
@@ -186,7 +182,6 @@ arrExperience[2].style.opacity = "0";
 arrExperience[3].style.opacity = "0";
 arrExperience[4].style.opacity = "0";
 arrExperience[5].style.opacity = "0";
-
 
 function experienceFunc() {
   let experienceStat = document
@@ -221,14 +216,11 @@ function experienceFunc() {
       arrExperience[5].style.opacity = "1";
       arrExperience[5].style.transition = "all 1.7s ease-in-out";
     }, 5000);
-
   }
 }
 window.addEventListener("scroll", experienceFunc);
 
-
 // window.addEventListener("scroll", headerMove);
-
 
 // unicorn part
 function unicornFunc() {
@@ -283,7 +275,6 @@ function dinasoFunc() {
     document.getElementById("dinasoExp").style.height = "200px";
     document.getElementById("dinasoExp").style.marginLeft = "15%";
   }
-
 }
 
 window.addEventListener("scroll", unicornFunc);
@@ -314,16 +305,15 @@ function wasaLogoFunc() {
       arrWasaLogo[0].style.height = "200px";
       arrWasaLogo[0].style.opacity = "1";
       arrWasaLogo[0].style.transition = "all 0.5s ease-in-out";
-    }, 500);
+    }, 200);
     setTimeout(() => {
       arrWasaLogo[2].style.fontSize = "50px";
       arrWasaLogo[2].style.opacity = "1";
       arrWasaLogo[2].style.transition = "all 0.5s ease-in-out";
-    }, 1000);
+    }, 500);
   }
 }
 window.addEventListener("scroll", wasaLogoFunc);
-
 
 //wasatea text part
 function wasaFunc() {
@@ -355,7 +345,6 @@ function wasaFunc() {
   }
 }
 window.addEventListener("scroll", wasaFunc);
-
 
 //slideshow in the wasatea blog
 var slideIndexWasa = 1;
@@ -400,12 +389,12 @@ function blomeLogoFunc() {
       arrBlomeLogo[0].style.height = "150px";
       arrBlomeLogo[0].style.opacity = "1";
       arrBlomeLogo[0].style.transition = "all 0.5s ease-in-out";
-    }, 500);
+    }, 200);
     setTimeout(() => {
       arrBlomeLogo[1].style.fontSize = "50px";
       arrBlomeLogo[1].style.opacity = "1";
       arrBlomeLogo[1].style.transition = "all 0.5s ease-in-out";
-    }, 1000);
+    }, 500);
   }
 }
 window.addEventListener("scroll", blomeLogoFunc);
@@ -419,12 +408,12 @@ function dciLogoFunc() {
       arrDciLogo[0].style.height = "150px";
       arrDciLogo[0].style.opacity = "1";
       arrDciLogo[0].style.transition = "all 0.5s ease-in-out";
-    }, 500);
+    }, 200);
     setTimeout(() => {
       arrDciLogo[1].style.fontSize = "50px";
       arrDciLogo[1].style.opacity = "1";
       arrDciLogo[1].style.transition = "all 0.5s ease-in-out";
-    }, 1000);
+    }, 500);
   }
 }
 window.addEventListener("scroll", dciLogoFunc);
