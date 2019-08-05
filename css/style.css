@@ -124,7 +124,7 @@ section {
   font-family: "Unlock", cursive;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   body {
     width: 100%;
   }
@@ -177,6 +177,7 @@ section {
     font-size: 20px;
     width: 50%;
     margin-top: 15%;
+    color: rgb(99, 96, 96);
   }
 
   .logo-text-small,
@@ -346,8 +347,31 @@ section {
 .playhard:hover .overlay {
   opacity: 1;
 }
-
 @media screen and (max-width: 768px) {
+  .workhard,
+  .playhard {
+    height: 300px;
+  }
+  .workhardImg,
+  .playhardImg {
+    height: 300px;
+  }
+  .profile1 {
+    height: 300px;
+  }
+  .profile2 {
+    height: 300px;
+  }
+  .playhard h5,
+  .workhard h5 {
+    font-size: 25px;
+    margin: 15px;
+  }
+  .overlay {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 420px) {
   /* workhard and playharder part */
   .profile1,
   .profile2 {
@@ -502,6 +526,15 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .profilecartoon {
+    height: 130vh;
+  }
+  .profilecartoon h2 {
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 420px) {
   /* introduction part */
   .profilecartoonimg {
     width: 40px;
@@ -522,6 +555,9 @@ section {
     letter-spacing: 2px;
     line-height: 40px;
     text-shadow: 3px 1px white;
+  }
+  #personalstatement h2 {
+    line-height: 40px;
   }
 
   #introLine {
@@ -574,6 +610,23 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  #skill {
+    flex-direction: column;
+  }
+  #skill img {
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 5% auto;
+  }
+
+  .skillBar {
+    width: 90%;
+    padding-left: 8%;
+  }
+}
+@media screen and (max-width: 420px) {
   #skill {
     flex-direction: column;
     font-size: 10px;
@@ -729,12 +782,46 @@ section {
   color: rgb(40, 80, 83);
 }
 
-/* experience small block*/
+/* experience tablet size */
 @media screen and (max-width: 768px) {
+  #experience {
+    height: 100vh;
+  }
+
+  #lineExpDiv1 {
+    width: 100%;
+    height: 170vh;
+  }
+
+  .ex2018,
+  .ex2016,
+  .ex2013 {
+    width: 60%;
+    height: 200px;
+    margin: 5% 0;
+    opacity: 0.9;
+  }
+  .ex2017,
+  .ex2015,
+  .ex2019 {
+    width: 60%;
+    height: 200px;
+    opacity: 0.9;
+  }
+
+  #starExp {
+    display: none;
+  }
+  #dinasoExp {
+    display: none;
+  }
+}
+/* experience handy size*/
+@media screen and (max-width: 420px) {
   #experienceTitle {
     font-size: 40px;
-    align-items: flex-end;
-    height: 15vh;
+    align-items: center;
+    height: 10vh;
   }
 
   #experience h3 {
@@ -827,7 +914,13 @@ section {
 .example h3 {
   font-size: 18px;
 }
+
 @media screen and (max-width: 768px) {
+  .middlepic {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 420px) {
   .middlepic {
     height: 10vh;
     background: white;
@@ -949,6 +1042,24 @@ section {
 
 /* wasatea introduction part */
 @media screen and (max-width: 768px) {
+  #bigWasaLogoDiv {
+    height: 40vh;
+  }
+  #lineWasaDiv {
+    height: 220vh;
+  }
+  .wasaintro1,
+  .wasaintro2 {
+    width: 42%;
+  }
+  .wasaintro2 {
+    margin-left: 55%;
+  }
+  .cartoonimgWasa {
+    opacity: 0.6;
+  }
+}
+@media screen and (max-width: 420px) {
   #lineWasaDiv {
     height: 250vh;
   }
@@ -993,6 +1104,16 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .teaimgDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
   .teaimgDiv {
     display: flex;
     flex-direction: column;
@@ -1109,7 +1230,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   #mediaIcon h3 {
     height: 50px;
     display: flex;
@@ -1285,8 +1406,91 @@ img {
   justify-content: center;
 }
 
-/* blomedesign part */
+/* blomedesign tablet size */
 @media screen and (max-width: 768px) {
+  #blomedesign {
+    width: 100%;
+    height: 130vh;
+  }
+
+  #bigBdLogDiv {
+    height: 40vh;
+  }
+  #lineBdDiv {
+    height: 120vh;
+  }
+
+  .blomepic {
+    height: 120vh;
+  }
+
+  .cartoonimgBD {
+    opacity: 0.6;
+  }
+  .triangle-up-wallet {
+    width: 280px;
+    height: 280px;
+    background-size: 40%;
+    margin: 0 5%;
+  }
+
+  .triangle-up-bag {
+    width: 300px;
+    height: 300px;
+    background-size: 35%;
+    margin: 0 10%;
+  }
+  .triangle-up-bottle {
+    width: 270px;
+    height: 270px;
+    background-size: 25%;
+    margin: 0 1%;
+    margin-left: 15%;
+  }
+  .triangle-up {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ffbdb7;
+    margin: 0 5%;
+  }
+
+  .triangle-up1 {
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 140px solid #ffbdb7;
+    margin-left: 15%;
+  }
+
+  .triangle-up2 {
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 240px solid #ffbdb7;
+    bottom: 0;
+    margin: 0 35%;
+  }
+
+  .triangle-up3 {
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #ffbdb7;
+    margin: 0 5%;
+  }
+  #amazonDiv {
+    height: 40vh;
+  }
+  #amazonDiv h1 {
+    height: 10vh;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    text-align: center;
+  }
+}
+
+/* blome handy size */
+@media screen and (max-width: 420px) {
   /* blome logo */
   #blomedesign {
     height: 120vh;
@@ -1460,7 +1664,6 @@ img {
   align-self: center;
   width: 50%;
   height: 100vh;
-  margin-left: 5%;
 }
 
 #dciright {
@@ -1468,7 +1671,6 @@ img {
   align-self: center;
   width: 50%;
   height: 100vh;
-  margin-left: 10%;
 }
 
 #dciright h1,
@@ -1479,34 +1681,46 @@ img {
 }
 
 #dcileft img {
-  width: 80%;
-}
-#itSkill:hover {
-  width: 90%;
-}
-
-#computerSkill:hover {
-  width: 90%;
+  width: 70%;
+  margin-left: 10%;
 }
 
 #dciright img {
+  width: 70%;
+  margin-left: 10%;
+}
+
+#itSkill:hover {
   width: 80%;
+  border-radius: 50%;
+}
+#itSkill {
+  border-radius: 50%;
+}
+
+#computerSkill:hover {
+  width: 80%;
+}
+
+#computerSkill {
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
   #bigDciLogDiv {
-    height: 60vh;
+    height: 40vh;
   }
   .DCI {
+    height: 150vh;
     flex-direction: column;
   }
   #dcileft h1 {
-    font-size: 25px;
+    font-size: 30px;
     background: white;
   }
 
   #dciright h1 {
-    font-size: 25px;
+    font-size: 30px;
     background: white;
   }
 
@@ -1515,10 +1729,59 @@ img {
     width: 100px;
   }
   #dcileft {
-    width: 90%;
+    width: 100%;
   }
   #dciright {
-    width: 90%;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .dcipic {
+    height: 50vh;
+  }
+  #dcileft img {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #dciright img {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #itSkill:hover {
+    width: 85%;
+  }
+
+  #computerSkill:hover {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #bigDciLogDiv {
+    height: 60vh;
+  }
+  .DCI {
+    flex-direction: column;
+  }
+  #dcileft h1 {
+    font-size: 20px;
+    background: white;
+  }
+
+  #dciright h1 {
+    font-size: 20px;
+    background: white;
+  }
+  .cartoonimgDci {
+    opacity: 0.5;
+    width: 100px;
+  }
+  #dcileft {
+    width: 95%;
+  }
+  #dciright {
+    width: 95%;
   }
 
   .dcipic {
@@ -1637,7 +1900,7 @@ img {
 }
 
 /* dci slideshow */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   .dcipic img {
     width: 100%;
   }
@@ -1652,8 +1915,7 @@ img {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
-  background-color: #00c6ab;
+  background-color: #35ec9e;
   background-repeat: no-repeat;
   background-position: 100% 50%;
   justify-content: center;
@@ -1670,28 +1932,24 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: top;
-  margin-left: 20px;
+  align-self: center;
   margin-top: 10%;
-  width: 50%;
+  width: 80%;
 }
 
 .contactdetail p {
-  margin: 10px 10px;
-  font-size: 40px;
+  margin: 10px;
+  font-size: 30px;
   letter-spacing: 2px;
-  text-shadow: 1px 1px white;
 }
 
 .contactdetail h3 {
   line-height: 40px;
   letter-spacing: 2px;
-  text-shadow: 1px 1px white;
 }
 
 .contactpic {
   background-image: url("../img/contact.gif");
-  width: 50%;
   line-height: 20px;
 }
 
@@ -1700,23 +1958,24 @@ img {
 .email:link {
   color: #293d3d;
   text-decoration: none;
-  font-family: "Unlock", cursive;
 }
 
 .email:hover {
   font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
+/* contact handy size */
+@media screen and (max-width: 420px) {
   #contact {
     flex-direction: column;
-    margin: 0%;
   }
   .contactdetail {
-    width: 80%;
+    width: 90%;
+    height: 50vh;
+    margin-top: 10%;
   }
   .contactpic {
-    width: 100%;
+    display: none;
   }
   .contactdetail p {
     font-size: 20px;
@@ -1726,10 +1985,21 @@ img {
   }
 }
 
+/* contact tablet size */
+@media screen and (max-width: 767px) {
+  .contactdetail {
+    width: 70%;
+  }
+}
+
 footer h3 {
   width: 100%;
   text-align: center;
   color: #293d3d;
-  font-size: 20px;
-  height: 10vh;
+  font-size: 15px;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% auto;
 }

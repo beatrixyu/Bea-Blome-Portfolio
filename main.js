@@ -232,7 +232,7 @@ function unicornFunc() {
       "all 1.2s ease-in-out";
   } else if (window.pageYOffset > 3200) {
     document.getElementById("unicornExp").style.width = "100px";
-    document.getElementById("unicornExp").style.marginLeft = "70%";
+    document.getElementById("unicornExp").style.marginLeft = "50%";
     document.getElementById("unicornExp").style.height = "100px";
   }
 }
@@ -242,7 +242,7 @@ function starFunc() {
     document.getElementById("starExp").style.height = "0px";
     document.getElementById("starExp").style.marginLeft = "-10%";
     document.getElementById("starExp").style.transition =
-      "all 1.2s ease-in-out";
+      "all 1.5s ease-in-out";
   } else if (window.pageYOffset > 3500) {
     document.getElementById("starExp").style.width = "90px";
     document.getElementById("starExp").style.height = "90px";
@@ -255,7 +255,7 @@ function mushroomFunc() {
     document.getElementById("mushroomExp").style.height = "0px";
     document.getElementById("mushroomExp").style.marginLeft = "50%";
     document.getElementById("mushroomExp").style.transition =
-      "all 1s ease-in-out";
+      "all 1.5s ease-in-out";
   } else if (window.pageYOffset > 3800) {
     document.getElementById("mushroomExp").style.width = "80px";
     document.getElementById("mushroomExp").style.height = "80px";
@@ -264,7 +264,7 @@ function mushroomFunc() {
 }
 
 function dinasoFunc() {
-  if (window.pageYOffset < 4000) {
+  if (window.pageYOffset < 3800) {
     document.getElementById("dinasoExp").style.width = "0px";
     document.getElementById("dinasoExp").style.height = "0px";
     document.getElementById("dinasoExp").style.marginLeft = "0%";
