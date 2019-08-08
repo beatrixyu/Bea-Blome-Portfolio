@@ -54,16 +54,16 @@ function scrollFunction() {
     document.querySelector(".logo-text").style.fontSize = "30px";
     document.querySelector(".logo-text").style.transition =
       "all 1s ease-in-out";
-    document.querySelector("#backlinkExp").style.fontSize = "25px";
-    document.querySelector("#backlinkPro").style.fontSize = "25px";
-    document.querySelector("#backlinkCon").style.fontSize = "25px";
+    document.querySelector("#backlinkExp").style.fontSize = "22px";
+    document.querySelector("#backlinkPro").style.fontSize = "22px";
+    document.querySelector("#backlinkCon").style.fontSize = "22px";
     document.querySelector("#backlinkExp").style.transition =
       "all 1s ease-in-out";
     document.querySelector("#backlinkPro").style.transition =
       "all 1s ease-in-out";
     document.querySelector("#backlinkCon").style.transition =
       "all 1s ease-in-out";
-    document.querySelector("header").style.height = "100px";
+    document.querySelector("header").style.height = "70px";
     document.querySelector("header").style.background =
       "rgba(250, 250, 250, 0.9)";
 
