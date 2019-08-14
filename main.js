@@ -1,5 +1,13 @@
 let personal = true;
 let experience = true;
+let oneSkill = true;
+let oneUnicorn = true;
+let oneStar = true;
+let oneMushroom = true;
+let oneDinaso = true;
+let oneWasa = true;
+let oneBlome = true;
+let oneDci = true;
 let arrPersonal = document.getElementById("personalstatement").children;
 let skillDiv = document.getElementById("skill");
 let arrSkill = document.getElementById("skill").children;
@@ -110,7 +118,7 @@ function personalFunc() {
   let personalstatement = document
     .getElementById("personalstatement")
     .getBoundingClientRect().top;
-  console.log(document.documentElement.scrollTop);
+  // console.log(document.documentElement.scrollTop);
   if (personalstatement < window.innerHeight / 1.5 && personalstatement) {
     personal = false;
     setTimeout(() => {
@@ -121,22 +129,22 @@ function personalFunc() {
     setTimeout(() => {
       arrPersonal[1].style.opacity = "1";
       arrPersonal[1].style.transition = "all 1.2s ease-in-out";
-    }, 1000);
+    }, 500);
     bigWasaLogoDiv;
     setTimeout(() => {
       arrPersonal[2].style.opacity = "1";
       arrPersonal[2].style.transition = "all 1.2s ease-in-out";
-    }, 2500);
+    }, 1000);
 
     setTimeout(() => {
       arrPersonal[3].style.opacity = "1";
       arrPersonal[3].style.transition = "all 1.2s ease-in-out";
-    }, 4000);
+    }, 1500);
 
     setTimeout(() => {
       arrPersonal[4].style.opacity = "1";
       arrPersonal[4].style.transition = "all 1.2s ease-in-out";
-    }, 5000);
+    }, 2000);
   }
 }
 window.addEventListener("scroll", personalFunc);
@@ -157,8 +165,10 @@ arrSkill[1].style.opacity = "0";
 arrSkill[1].style.transform = "rotateZ(45deg)";
 
 function skillFunc() {
-  let scrollPosition = window.pageYOffset;
-  if (scrollPosition > 2500) {
+  let skill = document.getElementById("skill").getBoundingClientRect().top;
+  // let scrollPosition = window.pageYOffset;
+  if (skill < window.innerHeight / 2 && oneSkill) {
+    oneSkill = false;
     setTimeout(() => {
       skillDiv.style.transform = "rotateZ(0deg)";
       arrSkill[0].style.opacity = "1";
@@ -197,25 +207,25 @@ function experienceFunc() {
     setTimeout(() => {
       arrExperience[1].style.opacity = "1";
       arrExperience[1].style.transition = "all 0.5s ease-in-out";
-    }, 1500);
+    }, 1000);
     setTimeout(() => {
       arrExperience[2].style.opacity = "1";
       arrExperience[2].style.transition = "all 1s ease-in-out";
-    }, 2500);
+    }, 1500);
 
     setTimeout(() => {
       arrExperience[3].style.opacity = "1";
       arrExperience[3].style.transition = "all 1.2s ease-in-out";
-    }, 3500);
+    }, 2000);
 
     setTimeout(() => {
       arrExperience[4].style.opacity = "1";
       arrExperience[4].style.transition = "all 1.5s ease-in-out";
-    }, 4500);
+    }, 2500);
     setTimeout(() => {
       arrExperience[5].style.opacity = "1";
       arrExperience[5].style.transition = "all 1.7s ease-in-out";
-    }, 5000);
+    }, 3000);
   }
 }
 window.addEventListener("scroll", experienceFunc);
@@ -224,7 +234,8 @@ window.addEventListener("scroll", experienceFunc);
 
 // unicorn part
 function unicornFunc() {
-  if (window.pageYOffset < 3200) {
+  if (oneUnicorn < window.innerHeight / 3.5 && oneUnicorn) {
+    oneUnicorn = false;
     document.getElementById("unicornExp").style.width = "0px";
     document.getElementById("unicornExp").style.height = "0px";
     document.getElementById("unicornExp").style.marginLeft = "30%";
@@ -237,7 +248,8 @@ function unicornFunc() {
   }
 }
 function starFunc() {
-  if (window.pageYOffset < 3500) {
+  if (oneStar < window.innerHeight / 3 && oneStar) {
+    oneStar = false;
     document.getElementById("starExp").style.width = "0px";
     document.getElementById("starExp").style.height = "0px";
     document.getElementById("starExp").style.marginLeft = "-10%";
@@ -250,7 +262,8 @@ function starFunc() {
   }
 }
 function mushroomFunc() {
-  if (window.pageYOffset < 3800) {
+  if (oneMushroom < window.innerHeight / 1.5 && oneMushroom) {
+    oneMushroom = false;
     document.getElementById("mushroomExp").style.width = "0px";
     document.getElementById("mushroomExp").style.height = "0px";
     document.getElementById("mushroomExp").style.marginLeft = "50%";
@@ -264,7 +277,8 @@ function mushroomFunc() {
 }
 
 function dinasoFunc() {
-  if (window.pageYOffset < 3800) {
+  if (oneDinaso < window.innerHeight / 2 && oneDinaso) {
+    oneDinaso = false;
     document.getElementById("dinasoExp").style.width = "0px";
     document.getElementById("dinasoExp").style.height = "0px";
     document.getElementById("dinasoExp").style.marginLeft = "0%";
@@ -298,8 +312,11 @@ window.addEventListener("scroll", dinasoFunc);
 
 //wasa logo
 function wasaLogoFunc() {
-  let scrollPosition = window.pageYOffset;
-  if (scrollPosition > 4500) {
+  let wasaDiv = document
+    .getElementById("bigWasaLogoDiv")
+    .getBoundingClientRect().top;
+  if (wasaDiv < window.innerHeight / 2 && wasaDiv) {
+    oneWasa = false;
     setTimeout(() => {
       arrWasaLogo[0].style.width = "200px";
       arrWasaLogo[0].style.height = "200px";
@@ -382,8 +399,10 @@ function showSlidesWasa(num) {
 }
 //blome logo
 function blomeLogoFunc() {
-  let scrollPosition = window.pageYOffset;
-  if (scrollPosition > 7000) {
+  let blomeDiv = document.getElementById("bigBdLogDiv").getBoundingClientRect()
+    .top;
+  if (blomeDiv < window.innerHeight / 2 && blomeDiv) {
+    oneBlome = false;
     setTimeout(() => {
       arrBlomeLogo[0].style.width = "150px";
       arrBlomeLogo[0].style.height = "150px";
@@ -397,12 +416,15 @@ function blomeLogoFunc() {
     }, 500);
   }
 }
+
 window.addEventListener("scroll", blomeLogoFunc);
 
 //dci logo
 function dciLogoFunc() {
-  let scrollPosition = window.pageYOffset;
-  if (scrollPosition > 10000) {
+  let dciDiv = document.getElementById("bigDciLogDiv").getBoundingClientRect()
+    .top;
+  if (dciDiv < window.innerHeight / 2 && dciDiv) {
+    oneDci = false;
     setTimeout(() => {
       arrDciLogo[0].style.width = "150px";
       arrDciLogo[0].style.height = "150px";
